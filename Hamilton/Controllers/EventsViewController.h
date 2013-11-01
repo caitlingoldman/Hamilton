@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  EventsViewController.h
 //  Hamilton
 //
 //  Created by Developer on 11/1/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface EventsViewController : UITableViewController
 
 @end
