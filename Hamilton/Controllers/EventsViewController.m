@@ -8,6 +8,7 @@
 
 #import "EventsViewController.h"
 #import "EventTableViewCell.h"
+#import "UIImageView+AFNetworking.h"
 #import "Event.h"
 
 @interface EventsViewController ()
@@ -38,6 +39,15 @@
   
   cell.name.text = event.name;
   cell.startDate.text = [event formattedStartDate];
+  cell.location.text = [event cityAndState];
+  
+  cell.eventImage.image = nil;
+  [cell.eventImage cancelImageRequestOperation];
+  
+  NSURL *imageURL = [NSURL URLWithString:event.imageURL];
+  if (imageURL) {
+    [cell.eventImage setImageWithURL:imageURL];
+  }
   
   return cell;
 }

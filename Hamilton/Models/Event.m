@@ -38,4 +38,8 @@
   return [dateFormatter stringFromDate:self.startDate];
 }
 
+- (NSString *)cityAndState{
+  return @"San Diego, California";
+}
+
 @end

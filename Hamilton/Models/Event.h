@@ -13,6 +13,7 @@
 + (NSArray *)loadEvents;
 - (id)initWithDictionary:(NSDictionary *)attributes;
 - (NSString *)formattedStartDate;
+- (NSString *)cityAndState;
 
 @property (strong, nonatomic) NSString *name;
 @property (strong, nonatomic) NSString *description;
