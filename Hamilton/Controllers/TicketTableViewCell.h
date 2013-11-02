@@ -1,5 +1,5 @@
 //
-//  EventTableViewCell.h
+//  TicketTableViewCell.h
 //  Hamilton
 //
 //  Created by Developer on 11/1/13.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EventTableViewCell : UITableViewCell
+@interface TicketTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *name;
 @property (weak, nonatomic) IBOutlet UILabel *startDate;
 @property (weak, nonatomic) IBOutlet UILabel *location;
