@@ -10,6 +10,7 @@
 #import "EventTableViewCell.h"
 #import "UIImageView+AFNetworking.h"
 #import "Event.h"
+#import "EventDetailsViewController.h"
 
 @interface EventsViewController ()
 @property (strong, nonatomic) NSArray *events;
@@ -50,6 +51,17 @@
   }
   
   return cell;
+}
+
+#pragma mark - Navigation
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue identifier] isEqualToString:@"ShowEventDetails"]) {
+        EventDetailsViewController *detailViewContoller = [segue destinationViewController];
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        Event *event = [self.events objectAtIndex:indexPath.row];
+        detailViewContoller.event = event;
+    }
 }
 
 #pragma mark - Refresh Control
