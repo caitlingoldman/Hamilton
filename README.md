@@ -5,7 +5,7 @@
 
 ### Development Setup (OSX)
 
-1. Install [CocoaPods]("http://cocoapods.org/")
+1. Install [CocoaPods](http://cocoapods.org)
 
 		gem install cocoapods
 		pod setup
