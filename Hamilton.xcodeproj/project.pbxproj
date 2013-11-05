@@ -111,14 +111,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		40F68CC11828D51D00940BD4 /* App */ = {
+		408A8846182951750078DCAA /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				8B034CB6182422250050CBAB /* Main.storyboard */,
-				8B034CDC182423170050CBAB /* Models */,
-				8B034CE1182424100050CBAB /* Controllers */,
+				8B034CE6182425330050CBAB /* EventTableViewCell.h */,
+				8B034CE7182425330050CBAB /* EventTableViewCell.m */,
+				8B5005F618247CE100155E6E /* TicketTableViewCell.h */,
+				8B5005F718247CE100155E6E /* TicketTableViewCell.m */,
 			);
-			name = App;
+			name = Views;
+			sourceTree = "<group>";
+		};
+		408A8847182951D80078DCAA /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = API;
 			sourceTree = "<group>";
 		};
 		8B034C98182422250050CBAB = {
@@ -144,6 +152,7 @@
 		8B034CA3182422250050CBAB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				408A8848182953340078DCAA /* MapKit.framework */,
 				8B034CA4182422250050CBAB /* Foundation.framework */,
 				8B034CA6182422250050CBAB /* CoreGraphics.framework */,
 				8B034CA8182422250050CBAB /* UIKit.framework */,
@@ -156,9 +165,13 @@
 		8B034CAA182422250050CBAB /* Hamilton */ = {
 			isa = PBXGroup;
 			children = (
-				40F68CC11828D51D00940BD4 /* App */,
 				8B034CB3182422250050CBAB /* AppDelegate.h */,
 				8B034CB4182422250050CBAB /* AppDelegate.m */,
+				8B034CB6182422250050CBAB /* Main.storyboard */,
+				408A8847182951D80078DCAA /* API */,
+				8B034CE1182424100050CBAB /* Controllers */,
+				8B034CDC182423170050CBAB /* Models */,
+				408A8846182951750078DCAA /* Views */,
 				8B034CBF182422250050CBAB /* Images.xcassets */,
 				8B034CAB182422250050CBAB /* Supporting Files */,
 			);
@@ -168,7 +181,6 @@
 		8B034CAB182422250050CBAB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				40F68CC41828E61100940BD4 /* buttonbg.png */,
 				8B034CAC182422250050CBAB /* Hamilton-Info.plist */,
 				8B034CAD182422250050CBAB /* InfoPlist.strings */,
 				8B034CB0182422250050CBAB /* main.m */,
@@ -209,34 +221,14 @@
 		8B034CE1182424100050CBAB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				8B5005EB18246BAD00155E6E /* Events */,
-				8B5005EC18246BC200155E6E /* Tickets */,
-			);
-			name = Controllers;
-			sourceTree = "<group>";
-		};
-		8B5005EB18246BAD00155E6E /* Events */ = {
-			isa = PBXGroup;
-			children = (
-				8B034CEA182453710050CBAB /* EventDetailsViewController.h */,
-				8B034CEB182453710050CBAB /* EventDetailsViewController.m */,
 				8B034CE21824246D0050CBAB /* EventsViewController.h */,
 				8B034CE31824246D0050CBAB /* EventsViewController.m */,
-				8B034CE6182425330050CBAB /* EventTableViewCell.h */,
-				8B034CE7182425330050CBAB /* EventTableViewCell.m */,
-			);
-			name = Events;
-			sourceTree = "<group>";
-		};
-		8B5005EC18246BC200155E6E /* Tickets */ = {
-			isa = PBXGroup;
-			children = (
+				8B034CEA182453710050CBAB /* EventDetailsViewController.h */,
+				8B034CEB182453710050CBAB /* EventDetailsViewController.m */,
 				8B5005EE18246C1E00155E6E /* TicketsViewController.h */,
 				8B5005EF18246C1E00155E6E /* TicketsViewController.m */,
-				8B5005F618247CE100155E6E /* TicketTableViewCell.h */,
-				8B5005F718247CE100155E6E /* TicketTableViewCell.m */,
 			);
-			name = Tickets;
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,7 +309,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40F68CC51828E61100940BD4 /* buttonbg.png in Resources */,
 				8B034CC0182422250050CBAB /* Images.xcassets in Resources */,
 				8B034CAF182422250050CBAB /* InfoPlist.strings in Resources */,
 				8B034CB8182422250050CBAB /* Main.storyboard in Resources */,
