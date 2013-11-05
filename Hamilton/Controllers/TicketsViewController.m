@@ -8,8 +8,8 @@
 
 #import "TicketsViewController.h"
 #import "TicketTableViewCell.h"
-#import "UIImageView+AFNetworking.h"
 #import "Ticket.h"
+//#import "UIImageView+AFNetworking.h"
 
 @interface TicketsViewController ()
 @property (strong, nonatomic) NSArray *tickets;
