@@ -28,6 +28,12 @@
 		8B034CE9182425330050CBAB /* EventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B034CE7182425330050CBAB /* EventTableViewCell.m */; };
 		8B034CEC182453710050CBAB /* EventDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B034CEB182453710050CBAB /* EventDetailsViewController.m */; };
 		8B034CED182453710050CBAB /* EventDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B034CEB182453710050CBAB /* EventDetailsViewController.m */; };
+		8B5005F018246C1E00155E6E /* TicketsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5005EF18246C1E00155E6E /* TicketsViewController.m */; };
+		8B5005F118246C1E00155E6E /* TicketsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5005EF18246C1E00155E6E /* TicketsViewController.m */; };
+		8B5005F418246E7000155E6E /* Ticket.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5005F318246E7000155E6E /* Ticket.m */; };
+		8B5005F518246E7000155E6E /* Ticket.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5005F318246E7000155E6E /* Ticket.m */; };
+		8B5005F818247CE100155E6E /* TicketTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5005F718247CE100155E6E /* TicketTableViewCell.m */; };
+		8B5005F918247CE100155E6E /* TicketTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5005F718247CE100155E6E /* TicketTableViewCell.m */; };
 		C1549C949B25413586F33A6D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1284DE3588EF4182B1BE0706 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +74,12 @@
 		8B034CE7182425330050CBAB /* EventTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventTableViewCell.m; path = Controllers/EventTableViewCell.m; sourceTree = "<group>"; };
 		8B034CEA182453710050CBAB /* EventDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventDetailsViewController.h; path = Controllers/EventDetailsViewController.h; sourceTree = "<group>"; };
 		8B034CEB182453710050CBAB /* EventDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventDetailsViewController.m; path = Controllers/EventDetailsViewController.m; sourceTree = "<group>"; };
+		8B5005EE18246C1E00155E6E /* TicketsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TicketsViewController.h; path = Controllers/TicketsViewController.h; sourceTree = "<group>"; };
+		8B5005EF18246C1E00155E6E /* TicketsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TicketsViewController.m; path = Controllers/TicketsViewController.m; sourceTree = "<group>"; };
+		8B5005F218246E7000155E6E /* Ticket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Ticket.h; path = Models/Ticket.h; sourceTree = "<group>"; };
+		8B5005F318246E7000155E6E /* Ticket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Ticket.m; path = Models/Ticket.m; sourceTree = "<group>"; };
+		8B5005F618247CE100155E6E /* TicketTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TicketTableViewCell.h; path = Controllers/TicketTableViewCell.h; sourceTree = "<group>"; };
+		8B5005F718247CE100155E6E /* TicketTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TicketTableViewCell.m; path = Controllers/TicketTableViewCell.m; sourceTree = "<group>"; };
 		9EBAA57CFAC047DE935B4291 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,6 +108,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		40F68CC11828D51D00940BD4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8B034CB6182422250050CBAB /* Main.storyboard */,
+				8B034CDC182423170050CBAB /* Models */,
+				8B034CE1182424100050CBAB /* Controllers */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
 		8B034C98182422250050CBAB = {
 			isa = PBXGroup;
 			children = (
@@ -131,11 +153,9 @@
 		8B034CAA182422250050CBAB /* Hamilton */ = {
 			isa = PBXGroup;
 			children = (
+				40F68CC11828D51D00940BD4 /* App */,
 				8B034CB3182422250050CBAB /* AppDelegate.h */,
 				8B034CB4182422250050CBAB /* AppDelegate.m */,
-				8B034CB6182422250050CBAB /* Main.storyboard */,
-				8B034CDC182423170050CBAB /* Models */,
-				8B034CE1182424100050CBAB /* Controllers */,
 				8B034CBF182422250050CBAB /* Images.xcassets */,
 				8B034CAB182422250050CBAB /* Supporting Files */,
 			);
@@ -176,11 +196,22 @@
 			children = (
 				8B034CDD1824232E0050CBAB /* Event.h */,
 				8B034CDE1824232E0050CBAB /* Event.m */,
+				8B5005F218246E7000155E6E /* Ticket.h */,
+				8B5005F318246E7000155E6E /* Ticket.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
 		};
 		8B034CE1182424100050CBAB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8B5005EB18246BAD00155E6E /* Events */,
+				8B5005EC18246BC200155E6E /* Tickets */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		8B5005EB18246BAD00155E6E /* Events */ = {
 			isa = PBXGroup;
 			children = (
 				8B034CEA182453710050CBAB /* EventDetailsViewController.h */,
@@ -190,7 +221,18 @@
 				8B034CE6182425330050CBAB /* EventTableViewCell.h */,
 				8B034CE7182425330050CBAB /* EventTableViewCell.m */,
 			);
-			name = Controllers;
+			name = Events;
+			sourceTree = "<group>";
+		};
+		8B5005EC18246BC200155E6E /* Tickets */ = {
+			isa = PBXGroup;
+			children = (
+				8B5005EE18246C1E00155E6E /* TicketsViewController.h */,
+				8B5005EF18246C1E00155E6E /* TicketsViewController.m */,
+				8B5005F618247CE100155E6E /* TicketTableViewCell.h */,
+				8B5005F718247CE100155E6E /* TicketTableViewCell.m */,
+			);
+			name = Tickets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,11 +368,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B034CEC182453710050CBAB /* EventDetailsViewController.m in Sources */,
+				8B5005F018246C1E00155E6E /* TicketsViewController.m in Sources */,
 				8B034CE41824246D0050CBAB /* EventsViewController.m in Sources */,
 				8B034CE8182425330050CBAB /* EventTableViewCell.m in Sources */,
 				8B034CB5182422250050CBAB /* AppDelegate.m in Sources */,
 				8B034CDF1824232E0050CBAB /* Event.m in Sources */,
+				8B5005F818247CE100155E6E /* TicketTableViewCell.m in Sources */,
 				8B034CB1182422250050CBAB /* main.m in Sources */,
+				8B5005F418246E7000155E6E /* Ticket.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,11 +383,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B5005F518246E7000155E6E /* Ticket.m in Sources */,
 				8B034CE9182425330050CBAB /* EventTableViewCell.m in Sources */,
 				8B034CED182453710050CBAB /* EventDetailsViewController.m in Sources */,
+				8B5005F118246C1E00155E6E /* TicketsViewController.m in Sources */,
 				8B034CE01824232E0050CBAB /* Event.m in Sources */,
 				8B034CE51824246D0050CBAB /* EventsViewController.m in Sources */,
 				8B034CD3182422250050CBAB /* HamiltonTests.m in Sources */,
+				8B5005F918247CE100155E6E /* TicketTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
