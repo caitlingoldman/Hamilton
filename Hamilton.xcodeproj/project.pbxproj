@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		40F68CC51828E61100940BD4 /* buttonbg.png in Resources */ = {isa = PBXBuildFile; fileRef = 40F68CC41828E61100940BD4 /* buttonbg.png */; };
 		8B034CA5182422250050CBAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B034CA4182422250050CBAB /* Foundation.framework */; };
 		8B034CA7182422250050CBAB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B034CA6182422250050CBAB /* CoreGraphics.framework */; };
 		8B034CA9182422250050CBAB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B034CA8182422250050CBAB /* UIKit.framework */; };
@@ -50,7 +49,6 @@
 
 /* Begin PBXFileReference section */
 		1284DE3588EF4182B1BE0706 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		40F68CC41828E61100940BD4 /* buttonbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonbg.png; sourceTree = "<group>"; };
 		8B034CA1182422250050CBAB /* Hamilton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hamilton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B034CA4182422250050CBAB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8B034CA6182422250050CBAB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -167,7 +165,6 @@
 		8B034CAB182422250050CBAB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				40F68CC41828E61100940BD4 /* buttonbg.png */,
 				8B034CAC182422250050CBAB /* Hamilton-Info.plist */,
 				8B034CAD182422250050CBAB /* InfoPlist.strings */,
 				8B034CB0182422250050CBAB /* main.m */,
@@ -316,7 +313,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40F68CC51828E61100940BD4 /* buttonbg.png in Resources */,
 				8B034CC0182422250050CBAB /* Images.xcassets in Resources */,
 				8B034CAF182422250050CBAB /* InfoPlist.strings in Resources */,
 				8B034CB8182422250050CBAB /* Main.storyboard in Resources */,

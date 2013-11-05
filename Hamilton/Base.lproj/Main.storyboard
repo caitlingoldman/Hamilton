@@ -178,18 +178,10 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XQo-MR-CsQ">
-                                <rect key="frame" x="5" y="453" width="310" height="60"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KRu-g5-0kr">
+                                <rect key="frame" x="20" y="235" width="280" height="111"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Register" backgroundImage="buttonbg.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="put map here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="55e-a8-pPm">
-                                <rect key="frame" x="20" y="300" width="280" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -198,6 +190,7 @@
                     <navigationItem key="navigationItem" id="2nm-00-UD9"/>
                     <connections>
                         <outlet property="cityAndState" destination="6rq-ou-01e" id="a9Z-vJ-E3E"/>
+                        <outlet property="description" destination="KRu-g5-0kr" id="bOh-Xy-68h"/>
                         <outlet property="eventImage" destination="tGb-EN-a5o" id="BRN-L0-uHI"/>
                         <outlet property="nameLabel" destination="IRs-eP-C66" id="z31-sN-gPd"/>
                         <outlet property="price" destination="Ihj-QV-r1j" id="8nO-7F-Sek"/>
@@ -268,7 +261,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="buttonbg.png" width="840" height="120"/>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
