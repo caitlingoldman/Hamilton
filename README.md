@@ -23,14 +23,14 @@
 
 ### About the group structure inside xcode
 
-* Hamilton - App delegate, storyboards, and other top level classes
-* Hamilton/API - API clients and other networking code
-* Hamilton/Controllers - View Controllers
-* Hamilton/Models - Data models, entities, core business logic. It doesn't matter if it's a CoreData entity or just a plain object, if it's core logic it goes here
-* Hamilton/Views - Custom views and table view cells
-* Hamilton/Support - Category methods, macros, and other supporting code that doesn't have another home
-* Resources/Images.xcassets - Add images here
-* Lib - code that is isolated from this project
+* **Hamilton** - App delegate, storyboards, and other top level classes
+* **Hamilton/API** - API clients and other networking code
+* **Hamilton/Controllers** - View Controllers
+* **Hamilton/Models** - Data models, entities, core business logic
+* **Hamilton/Views** - Custom views and table view cells
+* **Hamilton/Support** - Category methods, macros, and other supporting code that doesn't have another home
+* **Resources/Images.xcassets** - Add images here
+* **Lib** - code that is isolated from this project
 
 ### How to Contribute
 
