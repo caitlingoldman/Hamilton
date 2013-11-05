@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3F3E59EF1828CF080072927D /* LargeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3E59EE1828CF080072927D /* LargeButton.m */; };
+		40EA28BF18297095007A5D0F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 40EA28BE18297095007A5D0F /* README.md */; };
 		8B034CA5182422250050CBAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B034CA4182422250050CBAB /* Foundation.framework */; };
 		8B034CA7182422250050CBAB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B034CA6182422250050CBAB /* CoreGraphics.framework */; };
 		8B034CA9182422250050CBAB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B034CA8182422250050CBAB /* UIKit.framework */; };
@@ -50,8 +51,9 @@
 
 /* Begin PBXFileReference section */
 		1284DE3588EF4182B1BE0706 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F3E59ED1828CF080072927D /* LargeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LargeButton.h; path = Hamilton/Resources/LargeButton.h; sourceTree = "<group>"; };
-		3F3E59EE1828CF080072927D /* LargeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LargeButton.m; path = Hamilton/Resources/LargeButton.m; sourceTree = "<group>"; };
+		3F3E59ED1828CF080072927D /* LargeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LargeButton.h; path = Resources/LargeButton.h; sourceTree = "<group>"; };
+		3F3E59EE1828CF080072927D /* LargeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LargeButton.m; path = Resources/LargeButton.m; sourceTree = "<group>"; };
+		40EA28BE18297095007A5D0F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		8B034CA1182422250050CBAB /* Hamilton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hamilton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B034CA4182422250050CBAB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8B034CA6182422250050CBAB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,7 +65,7 @@
 		8B034CB3182422250050CBAB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8B034CB4182422250050CBAB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8B034CB7182422250050CBAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8B034CBF182422250050CBAB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8B034CBF182422250050CBAB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Hamilton/Images.xcassets; sourceTree = "<group>"; };
 		8B034CC5182422250050CBAB /* HamiltonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HamiltonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B034CC6182422250050CBAB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		8B034CCE182422250050CBAB /* HamiltonTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HamiltonTests-Info.plist"; sourceTree = "<group>"; };
@@ -114,21 +116,57 @@
 		3F3E59E91828C6560072927D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8B034CBF182422250050CBAB /* Images.xcassets */,
+				8B034CAB182422250050CBAB /* Supporting Files */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		40EA28BA18296F5D007A5D0F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8B034CE6182425330050CBAB /* EventTableViewCell.h */,
+				8B034CE7182425330050CBAB /* EventTableViewCell.m */,
+				8B5005F618247CE100155E6E /* TicketTableViewCell.h */,
+				8B5005F718247CE100155E6E /* TicketTableViewCell.m */,
 				3F3E59ED1828CF080072927D /* LargeButton.h */,
 				3F3E59EE1828CF080072927D /* LargeButton.m */,
 			);
-			name = Resources;
+			name = Views;
+			sourceTree = "<group>";
+		};
+		40EA28BB18296FB7007A5D0F /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		40EA28BC18296FBD007A5D0F /* Support */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		40EA28BD18297047007A5D0F /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Lib;
 			sourceTree = "<group>";
 		};
 		8B034C98182422250050CBAB = {
 			isa = PBXGroup;
 			children = (
-				3F3E59E91828C6560072927D /* Resources */,
+				40EA28BE18297095007A5D0F /* README.md */,
 				8B034CAA182422250050CBAB /* Hamilton */,
+				3F3E59E91828C6560072927D /* Resources */,
+				40EA28BD18297047007A5D0F /* Lib */,
 				8B034CCC182422250050CBAB /* HamiltonTests */,
-				8B034CA3182422250050CBAB /* Frameworks */,
-				8B034CA2182422250050CBAB /* Products */,
 				9EBAA57CFAC047DE935B4291 /* Pods.xcconfig */,
+				8B034CA2182422250050CBAB /* Products */,
+				8B034CA3182422250050CBAB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -156,13 +194,14 @@
 		8B034CAA182422250050CBAB /* Hamilton */ = {
 			isa = PBXGroup;
 			children = (
-				8B034CB6182422250050CBAB /* Main.storyboard */,
-				8B034CDC182423170050CBAB /* Models */,
-				8B034CE1182424100050CBAB /* Controllers */,
 				8B034CB3182422250050CBAB /* AppDelegate.h */,
 				8B034CB4182422250050CBAB /* AppDelegate.m */,
-				8B034CBF182422250050CBAB /* Images.xcassets */,
-				8B034CAB182422250050CBAB /* Supporting Files */,
+				8B034CB6182422250050CBAB /* Main.storyboard */,
+				40EA28BB18296FB7007A5D0F /* API */,
+				8B034CE1182424100050CBAB /* Controllers */,
+				8B034CDC182423170050CBAB /* Models */,
+				40EA28BA18296F5D007A5D0F /* Views */,
+				40EA28BC18296FBD007A5D0F /* Support */,
 			);
 			path = Hamilton;
 			sourceTree = "<group>";
@@ -176,6 +215,7 @@
 				8B034CB2182422250050CBAB /* Hamilton-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			path = Hamilton;
 			sourceTree = "<group>";
 		};
 		8B034CCC182422250050CBAB /* HamiltonTests */ = {
@@ -210,34 +250,14 @@
 		8B034CE1182424100050CBAB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				8B5005EB18246BAD00155E6E /* Events */,
-				8B5005EC18246BC200155E6E /* Tickets */,
-			);
-			name = Controllers;
-			sourceTree = "<group>";
-		};
-		8B5005EB18246BAD00155E6E /* Events */ = {
-			isa = PBXGroup;
-			children = (
 				8B034CEA182453710050CBAB /* EventDetailsViewController.h */,
 				8B034CEB182453710050CBAB /* EventDetailsViewController.m */,
 				8B034CE21824246D0050CBAB /* EventsViewController.h */,
 				8B034CE31824246D0050CBAB /* EventsViewController.m */,
-				8B034CE6182425330050CBAB /* EventTableViewCell.h */,
-				8B034CE7182425330050CBAB /* EventTableViewCell.m */,
-			);
-			name = Events;
-			sourceTree = "<group>";
-		};
-		8B5005EC18246BC200155E6E /* Tickets */ = {
-			isa = PBXGroup;
-			children = (
 				8B5005EE18246C1E00155E6E /* TicketsViewController.h */,
 				8B5005EF18246C1E00155E6E /* TicketsViewController.m */,
-				8B5005F618247CE100155E6E /* TicketTableViewCell.h */,
-				8B5005F718247CE100155E6E /* TicketTableViewCell.m */,
 			);
-			name = Tickets;
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,6 +340,7 @@
 			files = (
 				8B034CC0182422250050CBAB /* Images.xcassets in Resources */,
 				8B034CAF182422250050CBAB /* InfoPlist.strings in Resources */,
+				40EA28BF18297095007A5D0F /* README.md in Resources */,
 				8B034CB8182422250050CBAB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
