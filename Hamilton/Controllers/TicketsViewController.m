@@ -9,7 +9,7 @@
 #import "TicketsViewController.h"
 #import "TicketTableViewCell.h"
 #import "Ticket.h"
-//#import "UIImageView+AFNetworking.h"
+#import "UIImageView+AFNetworking.h"
 
 @interface TicketsViewController ()
 @property (strong, nonatomic) NSArray *tickets;
@@ -41,14 +41,14 @@
   cell.startDate.text = [ticket.event formattedStartDate];
   cell.location.text = [ticket.event cityAndState];
 
-//  cell.eventImage.image = nil;
-//  [cell.eventImage cancelImageRequestOperation];
-//
-//  NSURL *imageURL = [NSURL URLWithString:ticket.event.imageURL];
-//  if (imageURL) {
-//    [cell.eventImage setImageWithURL:imageURL];
-//  }
-  
+  cell.eventImage.image = nil;
+  [cell.eventImage cancelImageRequestOperation];
+
+  NSURL *imageURL = [NSURL URLWithString:ticket.event.imageURL];
+  if (imageURL) {
+    [cell.eventImage setImageWithURL:imageURL];
+  }
+
   return cell;
 }
 

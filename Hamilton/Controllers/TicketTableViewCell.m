@@ -9,5 +9,4 @@
 #import "TicketTableViewCell.h"
 
 @implementation TicketTableViewCell
-
 @end
