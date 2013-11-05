@@ -20,6 +20,7 @@
 @end
 
 @implementation EventDetailsViewController
+@synthesize registerButton;
 
 - (void) viewDidLoad {
     [super viewDidLoad];
@@ -34,6 +35,8 @@
     if (imageURL) {
         [self.eventImage setImageWithURL:imageURL];
     }
+    
+    [registerButton useGreenConfirmStyle];
 }
 
 @end

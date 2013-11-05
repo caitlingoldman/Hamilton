@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "Event.h"
+#import "LargeButton.h"
 
 @interface EventDetailsViewController : UIViewController
+
 @property (strong, nonatomic) Event *event;
+@property (weak, nonatomic) IBOutlet LargeButton *registerButton;
 @end

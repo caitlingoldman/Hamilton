@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F3E59EF1828CF080072927D /* LargeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3E59EE1828CF080072927D /* LargeButton.m */; };
 		8B034CA5182422250050CBAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B034CA4182422250050CBAB /* Foundation.framework */; };
 		8B034CA7182422250050CBAB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B034CA6182422250050CBAB /* CoreGraphics.framework */; };
 		8B034CA9182422250050CBAB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B034CA8182422250050CBAB /* UIKit.framework */; };
@@ -49,6 +50,8 @@
 
 /* Begin PBXFileReference section */
 		1284DE3588EF4182B1BE0706 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F3E59ED1828CF080072927D /* LargeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LargeButton.h; path = Hamilton/Resources/LargeButton.h; sourceTree = "<group>"; };
+		3F3E59EE1828CF080072927D /* LargeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LargeButton.m; path = Hamilton/Resources/LargeButton.m; sourceTree = "<group>"; };
 		8B034CA1182422250050CBAB /* Hamilton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hamilton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B034CA4182422250050CBAB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8B034CA6182422250050CBAB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -108,9 +111,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F3E59E91828C6560072927D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3F3E59ED1828CF080072927D /* LargeButton.h */,
+				3F3E59EE1828CF080072927D /* LargeButton.m */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		8B034C98182422250050CBAB = {
 			isa = PBXGroup;
 			children = (
+				3F3E59E91828C6560072927D /* Resources */,
 				8B034CAA182422250050CBAB /* Hamilton */,
 				8B034CCC182422250050CBAB /* HamiltonTests */,
 				8B034CA3182422250050CBAB /* Frameworks */,
@@ -368,6 +381,7 @@
 				8B5005F818247CE100155E6E /* TicketTableViewCell.m in Sources */,
 				8B034CB1182422250050CBAB /* main.m in Sources */,
 				8B5005F418246E7000155E6E /* Ticket.m in Sources */,
+				3F3E59EF1828CF080072927D /* LargeButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
