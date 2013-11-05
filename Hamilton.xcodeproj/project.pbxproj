@@ -108,6 +108,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		40F68CC11828D51D00940BD4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8B034CB6182422250050CBAB /* Main.storyboard */,
+				8B034CDC182423170050CBAB /* Models */,
+				8B034CE1182424100050CBAB /* Controllers */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
 		8B034C98182422250050CBAB = {
 			isa = PBXGroup;
 			children = (
@@ -143,11 +153,9 @@
 		8B034CAA182422250050CBAB /* Hamilton */ = {
 			isa = PBXGroup;
 			children = (
+				40F68CC11828D51D00940BD4 /* App */,
 				8B034CB3182422250050CBAB /* AppDelegate.h */,
 				8B034CB4182422250050CBAB /* AppDelegate.m */,
-				8B034CB6182422250050CBAB /* Main.storyboard */,
-				8B034CDC182423170050CBAB /* Models */,
-				8B034CE1182424100050CBAB /* Controllers */,
 				8B034CBF182422250050CBAB /* Images.xcassets */,
 				8B034CAB182422250050CBAB /* Supporting Files */,
 			);
