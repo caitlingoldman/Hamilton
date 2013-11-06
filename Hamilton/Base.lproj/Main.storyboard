@@ -65,7 +65,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XUn-Vy-Ibc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1705" y="-162"/>
+            <point key="canvasLocation" x="1446" y="-159"/>
         </scene>
         <!--Tickets View Controller - My Tickets-->
         <scene sceneID="is8-Od-wtX">
@@ -76,11 +76,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ticketTableCell" rowHeight="81" id="ZpF-uC-Alx" customClass="TicketTableViewCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ticketTableCell" rowHeight="81" id="ZpF-uC-Alx" customClass="TicketTableViewCell">
                                 <rect key="frame" x="0.0" y="86" width="320" height="81"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZpF-uC-Alx" id="t3t-6g-yYd">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="80"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Event Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nm8-cy-EvA">
@@ -115,6 +115,7 @@
                                     <outlet property="location" destination="55z-Qy-3Ue" id="nbo-1v-4aF"/>
                                     <outlet property="name" destination="nm8-cy-EvA" id="beS-8r-XcM"/>
                                     <outlet property="startDate" destination="rdN-4Y-m5u" id="XPv-d9-NrD"/>
+                                    <segue destination="qSW-jx-W8L" kind="push" id="SVe-a4-rMe"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -123,7 +124,26 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9ps-fT-8oN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1705" y="505"/>
+            <point key="canvasLocation" x="1446" y="508"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="2ew-Mj-gEs">
+            <objects>
+                <viewController id="qSW-jx-W8L" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RqO-w4-d3c"/>
+                        <viewControllerLayoutGuide type="bottom" id="EjG-fN-abI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZCn-fD-KSQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7mT-ho-z77"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Ab-4w-cGd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1812" y="508"/>
         </scene>
         <!--Event Details View Controller-->
         <scene sceneID="zjX-kK-gXY">
@@ -205,7 +225,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="00x-pC-03r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2129" y="-162"/>
+            <point key="canvasLocation" x="1812" y="-159"/>
         </scene>
         <!--Navigation Controller - Find Events-->
         <scene sceneID="o9b-nB-cS9">
@@ -224,7 +244,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tcs-jB-F6v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1179" y="-162"/>
+            <point key="canvasLocation" x="1080" y="-161"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="CTX-NV-Ccl">
@@ -263,7 +283,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8wj-Of-jOi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1179" y="505"/>
+            <point key="canvasLocation" x="1080" y="506"/>
         </scene>
     </scenes>
     <resources>
