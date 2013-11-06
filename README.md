@@ -21,7 +21,7 @@
 
 4. Build/Run project from xCode
 
-### About the group structure inside xcode
+### About the group and file structure
 
 * **Hamilton** - App delegate, storyboards, and other top level classes
 * **Hamilton/API** - API clients and other networking code
