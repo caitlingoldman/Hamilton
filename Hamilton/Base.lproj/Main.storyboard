@@ -207,11 +207,11 @@
             </objects>
             <point key="canvasLocation" x="2129" y="-162"/>
         </scene>
-        <!--Navigation Controller - Events-->
+        <!--Navigation Controller - Find Events-->
         <scene sceneID="o9b-nB-cS9">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6cF-Ka-xLM" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Events" image="runner" id="guj-S2-cxf"/>
+                    <tabBarItem key="tabBarItem" title="Find Events" image="runner" id="guj-S2-cxf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="wKT-u3-RcR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -245,11 +245,11 @@
             </objects>
             <point key="canvasLocation" x="637" y="174"/>
         </scene>
-        <!--Navigation Controller - Tickes-->
+        <!--Navigation Controller - My Tickes-->
         <scene sceneID="B7c-wa-zRM">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xxY-mb-rLV" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Tickes" image="ticket" id="gQm-GX-nH5"/>
+                    <tabBarItem key="tabBarItem" title="My Tickes" image="tickets" id="gQm-GX-nH5"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="x7f-eT-oCU"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5JK-iI-THV">
@@ -268,7 +268,7 @@
     </scenes>
     <resources>
         <image name="runner" width="18" height="25"/>
-        <image name="ticket" width="28" height="18"/>
+        <image name="tickets" width="30" height="27"/>
     </resources>
     <color key="tintColor" red="0.057366982099999998" green="0.4370265901" blue="0.068097539250000005" alpha="1" colorSpace="calibratedRGB"/>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
