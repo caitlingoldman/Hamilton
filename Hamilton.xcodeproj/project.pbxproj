@@ -45,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		1284DE3588EF4182B1BE0706 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		40AA15DF182A0DB500C70819 /* Hamilton-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hamilton-Prefix.pch"; sourceTree = "<group>"; };
 		40EA28BE18297095007A5D0F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		8B034CA1182422250050CBAB /* Hamilton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hamilton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B034CA4182422250050CBAB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -53,7 +54,6 @@
 		8B034CAC182422250050CBAB /* Hamilton-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Hamilton-Info.plist"; sourceTree = "<group>"; };
 		8B034CAE182422250050CBAB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8B034CB0182422250050CBAB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8B034CB2182422250050CBAB /* Hamilton-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hamilton-Prefix.pch"; sourceTree = "<group>"; };
 		8B034CB3182422250050CBAB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8B034CB4182422250050CBAB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8B034CB7182422250050CBAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -203,12 +203,13 @@
 		8B034CAB182422250050CBAB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				40AA15DF182A0DB500C70819 /* Hamilton-Prefix.pch */,
 				8B034CAC182422250050CBAB /* Hamilton-Info.plist */,
 				8B034CAD182422250050CBAB /* InfoPlist.strings */,
 				8B034CB0182422250050CBAB /* main.m */,
-				8B034CB2182422250050CBAB /* Hamilton-Prefix.pch */,
 			);
-			path = "Supporting Files";
+			name = "Supporting Files";
+			path = ../Hamilton;
 			sourceTree = "<group>";
 		};
 		8B034CCC182422250050CBAB /* HamiltonTests */ = {
