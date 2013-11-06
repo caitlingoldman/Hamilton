@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
+#import <MapKit/MapKit.h>
+#import "Ticket.h"
 
 @interface TicketDetailsViewController : UIViewController
-
+@property (strong, nonatomic) Ticket *ticket;
 @end

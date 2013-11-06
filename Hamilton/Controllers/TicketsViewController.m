@@ -8,8 +8,9 @@
 
 #import "TicketsViewController.h"
 #import "TicketTableViewCell.h"
-#import "Ticket.h"
 #import "UIImageView+AFNetworking.h"
+#import "Ticket.h"
+#import "TicketDetailsViewController.h"
 
 @interface TicketsViewController ()
 @property (strong, nonatomic) NSArray *tickets;
@@ -60,5 +61,15 @@
   [self.refreshControl endRefreshing];
 }
 
+#pragma mark - Navigation
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+  if ([[segue identifier] isEqualToString:@"ShowTicketDetails"]) {
+    TicketDetailsViewController *detailViewContoller = [segue destinationViewController];
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    Ticket *ticket = [self.tickets objectAtIndex:indexPath.row];
+    detailViewContoller.ticket = ticket;
+  }
+}
 
 @end

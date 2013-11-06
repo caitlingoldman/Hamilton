@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="anO-MJ-bVh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="anO-MJ-bVh">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
     </dependencies>
@@ -115,7 +115,7 @@
                                     <outlet property="location" destination="55z-Qy-3Ue" id="nbo-1v-4aF"/>
                                     <outlet property="name" destination="nm8-cy-EvA" id="beS-8r-XcM"/>
                                     <outlet property="startDate" destination="rdN-4Y-m5u" id="XPv-d9-NrD"/>
-                                    <segue destination="qSW-jx-W8L" kind="push" id="SVe-a4-rMe"/>
+                                    <segue destination="qSW-jx-W8L" kind="push" identifier="ShowTicketDetails" id="SVe-a4-rMe"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -126,20 +126,29 @@
             </objects>
             <point key="canvasLocation" x="1446" y="508"/>
         </scene>
-        <!--View Controller-->
+        <!--Ticket Details View Controller - Event Name-->
         <scene sceneID="2ew-Mj-gEs">
             <objects>
-                <viewController id="qSW-jx-W8L" sceneMemberID="viewController">
+                <viewController id="qSW-jx-W8L" customClass="TicketDetailsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RqO-w4-d3c"/>
                         <viewControllerLayoutGuide type="bottom" id="EjG-fN-abI"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ZCn-fD-KSQ">
+                    <view key="view" contentMode="scaleToFill" id="ZCn-fD-KSQ" customClass="TicketDetailsView">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" zoomEnabled="NO" scrollEnabled="NO" rotateEnabled="NO" pitchEnabled="NO" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hmx-d1-Mxd">
+                                <rect key="frame" x="0.0" y="65" width="320" height="135"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="7mT-ho-z77"/>
+                    <navigationItem key="navigationItem" title="Event Name" id="7mT-ho-z77"/>
+                    <connections>
+                        <outlet property="map" destination="hmx-d1-Mxd" id="92R-Y6-pke"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Ab-4w-cGd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

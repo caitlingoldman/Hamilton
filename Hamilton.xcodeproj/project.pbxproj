@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40BF281C182A0FFF00A1BD71 /* TicketDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BF281B182A0FFF00A1BD71 /* TicketDetailsViewController.m */; };
+		40BF281D182A0FFF00A1BD71 /* TicketDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BF281B182A0FFF00A1BD71 /* TicketDetailsViewController.m */; };
+		40BF281F182A184000A1BD71 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40BF281E182A184000A1BD71 /* CoreLocation.framework */; };
+		40BF2821182A184900A1BD71 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40BF2820182A184900A1BD71 /* MapKit.framework */; };
+		40BF2828182A989100A1BD71 /* TicketDetailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BF2827182A989100A1BD71 /* TicketDetailsView.m */; };
+		40BF2829182A989100A1BD71 /* TicketDetailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BF2827182A989100A1BD71 /* TicketDetailsView.m */; };
 		40EA28BF18297095007A5D0F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 40EA28BE18297095007A5D0F /* README.md */; };
 		8B034CA5182422250050CBAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B034CA4182422250050CBAB /* Foundation.framework */; };
 		8B034CA7182422250050CBAB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B034CA6182422250050CBAB /* CoreGraphics.framework */; };
@@ -46,6 +52,12 @@
 /* Begin PBXFileReference section */
 		1284DE3588EF4182B1BE0706 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		40AA15DF182A0DB500C70819 /* Hamilton-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hamilton-Prefix.pch"; sourceTree = "<group>"; };
+		40BF281A182A0FFF00A1BD71 /* TicketDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TicketDetailsViewController.h; sourceTree = "<group>"; };
+		40BF281B182A0FFF00A1BD71 /* TicketDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TicketDetailsViewController.m; sourceTree = "<group>"; };
+		40BF281E182A184000A1BD71 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		40BF2820182A184900A1BD71 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		40BF2826182A989100A1BD71 /* TicketDetailsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TicketDetailsView.h; sourceTree = "<group>"; };
+		40BF2827182A989100A1BD71 /* TicketDetailsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TicketDetailsView.m; sourceTree = "<group>"; };
 		40EA28BE18297095007A5D0F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		8B034CA1182422250050CBAB /* Hamilton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hamilton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B034CA4182422250050CBAB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -87,6 +99,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40BF2821182A184900A1BD71 /* MapKit.framework in Frameworks */,
+				40BF281F182A184000A1BD71 /* CoreLocation.framework in Frameworks */,
 				8B034CA7182422250050CBAB /* CoreGraphics.framework in Frameworks */,
 				8B034CA9182422250050CBAB /* UIKit.framework in Frameworks */,
 				8B034CA5182422250050CBAB /* Foundation.framework in Frameworks */,
@@ -125,6 +139,8 @@
 				8BC0F36B1829D3ED001B5A7B /* LargeButton.m */,
 				8BC0F36C1829D3ED001B5A7B /* TicketTableViewCell.h */,
 				8BC0F36D1829D3ED001B5A7B /* TicketTableViewCell.m */,
+				40BF2826182A989100A1BD71 /* TicketDetailsView.h */,
+				40BF2827182A989100A1BD71 /* TicketDetailsView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -176,6 +192,8 @@
 		8B034CA3182422250050CBAB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				40BF2820182A184900A1BD71 /* MapKit.framework */,
+				40BF281E182A184000A1BD71 /* CoreLocation.framework */,
 				8B034CA4182422250050CBAB /* Foundation.framework */,
 				8B034CA6182422250050CBAB /* CoreGraphics.framework */,
 				8B034CA8182422250050CBAB /* UIKit.framework */,
@@ -250,6 +268,8 @@
 				8BC0F3631829D320001B5A7B /* EventsViewController.m */,
 				8BC0F3641829D320001B5A7B /* TicketsViewController.h */,
 				8BC0F3651829D320001B5A7B /* TicketsViewController.m */,
+				40BF281A182A0FFF00A1BD71 /* TicketDetailsViewController.h */,
+				40BF281B182A0FFF00A1BD71 /* TicketDetailsViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -392,7 +412,9 @@
 				8B034CB1182422250050CBAB /* main.m in Sources */,
 				8BC0F3751829D3FB001B5A7B /* Event.m in Sources */,
 				8BC0F36E1829D3ED001B5A7B /* EventTableViewCell.m in Sources */,
+				40BF281C182A0FFF00A1BD71 /* TicketDetailsViewController.m in Sources */,
 				8BC0F3761829D3FB001B5A7B /* Ticket.m in Sources */,
+				40BF2828182A989100A1BD71 /* TicketDetailsView.m in Sources */,
 				8BC0F3671829D320001B5A7B /* TicketsViewController.m in Sources */,
 				8BC0F36F1829D3ED001B5A7B /* LargeButton.m in Sources */,
 				8BC0F3661829D320001B5A7B /* EventsViewController.m in Sources */,
@@ -406,6 +428,8 @@
 			files = (
 				8B034CED182453710050CBAB /* EventDetailsViewController.m in Sources */,
 				8B034CD3182422250050CBAB /* HamiltonTests.m in Sources */,
+				40BF281D182A0FFF00A1BD71 /* TicketDetailsViewController.m in Sources */,
+				40BF2829182A989100A1BD71 /* TicketDetailsView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

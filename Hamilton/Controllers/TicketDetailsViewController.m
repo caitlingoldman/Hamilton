@@ -8,31 +8,48 @@
 
 #import "TicketDetailsViewController.h"
 
-@interface TicketDetailsViewController ()
-
+@interface TicketDetailsViewController () <CLLocationManagerDelegate>
+@property (strong, nonatomic) IBOutlet MKMapView *map;
+@property (strong, nonatomic) CLLocationManager *locationManager;
 @end
 
 @implementation TicketDetailsViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
+- (void)viewDidLoad {
+  [super viewDidLoad];
+  self.title = self.ticket.event.name;
+  [self updateLocation];
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view.
+- (void)didReceiveMemoryWarning {
+  [super didReceiveMemoryWarning];
+  self.locationManager = nil;
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (CLLocationManager *)locationManager {
+  if (!_locationManager) {
+    _locationManager = [[CLLocationManager alloc] init];
+    _locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters;
+    _locationManager.delegate = self;
+  }
+  return _locationManager;
+}
+
+- (void)updateLocation {
+  [self.locationManager startUpdatingLocation];
+}
+
+- (void)zoomToLocation:(CLLocation *)location radius:(CGFloat)radius {
+  MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(location.coordinate, radius, radius);
+  [self.map setRegion:region];
+}
+
+#pragma mark - CLLocationManagerDelegate methods
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
+  CLLocation *location = [locations lastObject];
+  [self zoomToLocation:location radius:750];
+  [self.locationManager stopUpdatingLocation];
 }
 
 @end

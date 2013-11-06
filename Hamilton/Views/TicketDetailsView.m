@@ -10,22 +10,23 @@
 
 @implementation TicketDetailsView
 
-- (id)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        // Initialization code
-    }
-    return self;
+- (id)initWithFrame:(CGRect)frame {
+  self = [super initWithFrame:frame];
+  if (self) {}
+  return self;
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
+- (void)drawRect:(CGRect)rect {
+  [self drawLineUnderMap];
 }
-*/
+
+- (void)drawLineUnderMap {
+  CGContextRef context = UIGraphicsGetCurrentContext();
+  CGContextSetLineWidth(context, 2.0);
+  CGContextSetStrokeColorWithColor(context, [UIColor groupTableViewBackgroundColor].CGColor);
+  CGContextMoveToPoint(context, 0, 200);
+  CGContextAddLineToPoint(context, 320, 200);
+  CGContextStrokePath(context);
+}
 
 @end
