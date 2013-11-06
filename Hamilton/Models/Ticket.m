@@ -11,7 +11,6 @@
 @implementation Ticket
 
 + (NSArray *)loadTickets {
-  sleep(2);
   NSMutableArray *tickets = [[NSMutableArray alloc] init];
   
   for (int i = 0; i < 5; i++) {

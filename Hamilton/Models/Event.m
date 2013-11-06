@@ -11,7 +11,6 @@
 @implementation Event
 
 + (NSArray *)loadEvents{
-  sleep(2);
   NSMutableArray *events = [[NSMutableArray alloc] init];
   
   for (int i = 0; i < 50; i++) {
