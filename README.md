@@ -1,3 +1,5 @@
+#CAITLIN DELETE THIS
+
 # Hamilton
 
 **Hamilton**, an awesome iOS event registration app!
