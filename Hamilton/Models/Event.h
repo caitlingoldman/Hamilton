@@ -7,10 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SennaClient.h"
 
 @interface Event : NSObject
 
-+ (NSArray *)loadEvents;
++ (NSURLSessionDataTask *)loadEventsWithCompletion:( void(^)(NSArray *events) )completion;
 - (id)initWithDictionary:(NSDictionary *)attributes;
 - (NSString *)formattedStartDate;
 - (NSString *)cityAndState;
@@ -20,10 +21,13 @@
 @property (strong, nonatomic) NSString *description;
 @property (strong, nonatomic) NSDate *startDate;
 @property (strong, nonatomic) NSDate *endDate;
-@property (strong, nonatomic) NSString *address;
+@property (strong, nonatomic) NSString *city;
+@property (strong, nonatomic) NSString *state;
+@property (strong, nonatomic) NSString *latitude;
+@property (strong, nonatomic) NSString *longitude;
 @property (strong, nonatomic) NSNumber *maxRegistrations;
 @property (strong, nonatomic) NSNumber *price;
 @property (strong, nonatomic) NSString *imageURL;
-@property (strong, nonatomic) NSString *registrationStatus;
+@property (nonatomic) BOOL isOpen;
 
 @end
