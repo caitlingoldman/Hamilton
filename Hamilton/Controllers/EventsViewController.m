@@ -20,7 +20,15 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  self.events = [Event loadEvents];
+//  NSURLSessionDataTask *task =
+  [Event loadEventsWithCompletion:^(NSArray *events) {
+    if (events) {
+      self.events = events;
+      [self.tableView reloadData];
+    } else {
+      NSLog(@"Something went wrong");
+    }
+  }];
   
   UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
   [refreshControl addTarget:self action:@selector(refresh) forControlEvents:UIControlEventValueChanged];
@@ -67,9 +75,16 @@
 #pragma mark - Refresh Control
 
 - (void)refresh {
-  self.events = [Event loadEvents];
-  [self.tableView reloadData];
-  [self.refreshControl endRefreshing];
+//  NSURLSessionDataTask *task =
+  [Event loadEventsWithCompletion:^(NSArray *events) {
+    if (events) {
+      self.events = events;
+      [self.tableView reloadData];
+    } else {
+      NSLog(@"Something went wrong");
+    }
+    [self.refreshControl endRefreshing];
+  }];
 }
 
 
