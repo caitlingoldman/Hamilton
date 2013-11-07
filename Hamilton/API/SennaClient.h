@@ -10,4 +10,5 @@
 
 @interface SennaClient : AFHTTPSessionManager
 + (SennaClient *)sharedClient;
+- (NSURLSessionDataTask *)getEventsWithCompletion:( void(^)(NSArray *results, NSError *error) )completion;
 @end
