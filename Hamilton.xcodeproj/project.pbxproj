@@ -36,6 +36,8 @@
 		8BC0F3701829D3ED001B5A7B /* TicketTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC0F36D1829D3ED001B5A7B /* TicketTableViewCell.m */; };
 		8BC0F3751829D3FB001B5A7B /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC0F3721829D3FB001B5A7B /* Event.m */; };
 		8BC0F3761829D3FB001B5A7B /* Ticket.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC0F3741829D3FB001B5A7B /* Ticket.m */; };
+		8BD4A53A182B3B1A00A7DEA6 /* SennaClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD4A539182B3B1A00A7DEA6 /* SennaClient.m */; };
+		8BD4A53B182B3B1A00A7DEA6 /* SennaClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD4A539182B3B1A00A7DEA6 /* SennaClient.m */; };
 		C1549C949B25413586F33A6D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1284DE3588EF4182B1BE0706 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +93,8 @@
 		8BC0F3721829D3FB001B5A7B /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
 		8BC0F3731829D3FB001B5A7B /* Ticket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ticket.h; sourceTree = "<group>"; };
 		8BC0F3741829D3FB001B5A7B /* Ticket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ticket.m; sourceTree = "<group>"; };
+		8BD4A538182B3B1A00A7DEA6 /* SennaClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SennaClient.h; sourceTree = "<group>"; };
+		8BD4A539182B3B1A00A7DEA6 /* SennaClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SennaClient.m; sourceTree = "<group>"; };
 		9EBAA57CFAC047DE935B4291 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,6 +152,8 @@
 		40EA28BB18296FB7007A5D0F /* API */ = {
 			isa = PBXGroup;
 			children = (
+				8BD4A538182B3B1A00A7DEA6 /* SennaClient.h */,
+				8BD4A539182B3B1A00A7DEA6 /* SennaClient.m */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -416,6 +422,7 @@
 				8BC0F3751829D3FB001B5A7B /* Event.m in Sources */,
 				8BC0F36E1829D3ED001B5A7B /* EventTableViewCell.m in Sources */,
 				40BF281C182A0FFF00A1BD71 /* TicketDetailsViewController.m in Sources */,
+				8BD4A53A182B3B1A00A7DEA6 /* SennaClient.m in Sources */,
 				8BC0F3761829D3FB001B5A7B /* Ticket.m in Sources */,
 				40BF2828182A989100A1BD71 /* TicketDetailsView.m in Sources */,
 				8BC0F3671829D320001B5A7B /* TicketsViewController.m in Sources */,
@@ -430,6 +437,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B034CED182453710050CBAB /* EventDetailsViewController.m in Sources */,
+				8BD4A53B182B3B1A00A7DEA6 /* SennaClient.m in Sources */,
 				8B034CD3182422250050CBAB /* HamiltonTests.m in Sources */,
 				40BF281D182A0FFF00A1BD71 /* TicketDetailsViewController.m in Sources */,
 				40BF2829182A989100A1BD71 /* TicketDetailsView.m in Sources */,
@@ -553,10 +561,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Hamilton/Hamilton-Prefix.pch";
 				INFOPLIST_FILE = "Hamilton/Hamilton-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -568,10 +579,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Hamilton/Hamilton-Prefix.pch";
 				INFOPLIST_FILE = "Hamilton/Hamilton-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
