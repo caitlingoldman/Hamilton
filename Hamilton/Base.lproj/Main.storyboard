@@ -286,11 +286,11 @@
             </objects>
             <point key="canvasLocation" x="637" y="174"/>
         </scene>
-        <!--Navigation Controller - My Tickes-->
+        <!--Navigation Controller - My Tickets-->
         <scene sceneID="B7c-wa-zRM">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xxY-mb-rLV" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="My Tickes" image="tickets" id="gQm-GX-nH5"/>
+                    <tabBarItem key="tabBarItem" title="My Tickets" image="tickets" id="gQm-GX-nH5"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="x7f-eT-oCU"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5JK-iI-THV">
