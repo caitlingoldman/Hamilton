@@ -33,10 +33,15 @@
 * **Lib** - code that is isolated from this project
 
 ### How to Contribute
-
+##### Adding a feature:
 1. Fork it
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
 
+##### Keep up-to-date:
+1. Add upstream (`git remote add upstream git@github.com:adamzaninovich/Hamilton.git`)
+2. Fetch lastest upstream master (`git pull upstream`)
+3. Checkout master (`git checkout master`)
+4. Merge upstream into master (`git merge upstream/master`)
