@@ -13,6 +13,8 @@
 		40BF2821182A184900A1BD71 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40BF2820182A184900A1BD71 /* MapKit.framework */; };
 		40BF2828182A989100A1BD71 /* TicketDetailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BF2827182A989100A1BD71 /* TicketDetailsView.m */; };
 		40BF2829182A989100A1BD71 /* TicketDetailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BF2827182A989100A1BD71 /* TicketDetailsView.m */; };
+		40C060F2182CB0310096A1C0 /* EventDetailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C060F1182CB0310096A1C0 /* EventDetailsView.m */; };
+		40C060F3182CB0310096A1C0 /* EventDetailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C060F1182CB0310096A1C0 /* EventDetailsView.m */; };
 		40EA28BF18297095007A5D0F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 40EA28BE18297095007A5D0F /* README.md */; };
 		8B034CA5182422250050CBAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B034CA4182422250050CBAB /* Foundation.framework */; };
 		8B034CA7182422250050CBAB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B034CA6182422250050CBAB /* CoreGraphics.framework */; };
@@ -60,6 +62,8 @@
 		40BF2820182A184900A1BD71 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		40BF2826182A989100A1BD71 /* TicketDetailsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TicketDetailsView.h; sourceTree = "<group>"; };
 		40BF2827182A989100A1BD71 /* TicketDetailsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TicketDetailsView.m; sourceTree = "<group>"; };
+		40C060F0182CB0310096A1C0 /* EventDetailsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventDetailsView.h; sourceTree = "<group>"; };
+		40C060F1182CB0310096A1C0 /* EventDetailsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventDetailsView.m; sourceTree = "<group>"; };
 		40EA28BE18297095007A5D0F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		8B034CA1182422250050CBAB /* Hamilton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hamilton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B034CA4182422250050CBAB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -145,6 +149,8 @@
 				8BC0F36D1829D3ED001B5A7B /* TicketTableViewCell.m */,
 				40BF2826182A989100A1BD71 /* TicketDetailsView.h */,
 				40BF2827182A989100A1BD71 /* TicketDetailsView.m */,
+				40C060F0182CB0310096A1C0 /* EventDetailsView.h */,
+				40C060F1182CB0310096A1C0 /* EventDetailsView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -420,6 +426,7 @@
 				8B034CB5182422250050CBAB /* AppDelegate.m in Sources */,
 				8B034CB1182422250050CBAB /* main.m in Sources */,
 				8BC0F3751829D3FB001B5A7B /* Event.m in Sources */,
+				40C060F2182CB0310096A1C0 /* EventDetailsView.m in Sources */,
 				8BC0F36E1829D3ED001B5A7B /* EventTableViewCell.m in Sources */,
 				40BF281C182A0FFF00A1BD71 /* TicketDetailsViewController.m in Sources */,
 				8BD4A53A182B3B1A00A7DEA6 /* SennaClient.m in Sources */,
@@ -436,6 +443,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40C060F3182CB0310096A1C0 /* EventDetailsView.m in Sources */,
 				8B034CED182453710050CBAB /* EventDetailsViewController.m in Sources */,
 				8BD4A53B182B3B1A00A7DEA6 /* SennaClient.m in Sources */,
 				8B034CD3182422250050CBAB /* HamiltonTests.m in Sources */,
