@@ -34,8 +34,8 @@
   self.description = attributes[@"description"];
   self.city = attributes[@"city"];
   self.state = attributes[@"state"];
-  self.latitude = [self latFromGeo:attributes[@"geo"]];
-  self.longitude = [self lonFromGeo:attributes[@"geo"]];
+  self.latitude = [[self latFromGeo:attributes[@"geo"]] doubleValue];
+  self.longitude = [[self lonFromGeo:attributes[@"geo"]] doubleValue];
   self.isOpen = [attributes[@"open"] boolValue];
   self.maxRegistrations = attributes[@"max_registrations"];
   return self;
