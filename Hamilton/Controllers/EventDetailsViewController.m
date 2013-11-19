@@ -10,7 +10,7 @@
 #import "Event.h"
 #import "UIImageView+AFNetworking.h"
 
-@interface EventDetailsViewController() <CLLocationManagerDelegate>
+@interface EventDetailsViewController()
 @property (weak, nonatomic) IBOutlet UIImageView *eventImage;
 @property (weak, nonatomic) IBOutlet UILabel *cityAndState;
 @property (weak, nonatomic) IBOutlet UILabel *description;
@@ -30,7 +30,7 @@
   self.description.text = self.event.description;
   [self setRegButton];
   [self setImage];
-  [self updateLocation];
+  [self addLocation];
 }
 
 - (void)setRegButton {
@@ -58,30 +58,15 @@
 
 #pragma mark - Mapping location
 
-- (CLLocationManager *)locationManager {
-  if (!_locationManager) {
-    _locationManager = [[CLLocationManager alloc] init];
-    _locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters;
-    _locationManager.delegate = self;
-  }
-  return _locationManager;
-}
-
-- (void)updateLocation {
-  [self.locationManager startUpdatingLocation];
+- (void)addLocation{
+  CLLocation *location = [[CLLocation alloc] initWithLatitude:self.event.latitude longitude:self.event.longitude];
+  
+  [self zoomToLocation:location radius:100000];
 }
 
 - (void)zoomToLocation:(CLLocation *)location radius:(CGFloat)radius {
   MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(location.coordinate, radius, radius);
   [self.map setRegion:region];
-}
-
-#pragma mark - CLLocationManagerDelegate methods
-
-- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
-  CLLocation *location = [locations lastObject];
-  [self zoomToLocation:location radius:500];
-  [self.locationManager stopUpdatingLocation];
 }
 
 

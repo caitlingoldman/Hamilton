@@ -23,8 +23,8 @@
 @property (strong, nonatomic) NSDate *endDate;
 @property (strong, nonatomic) NSString *city;
 @property (strong, nonatomic) NSString *state;
-@property (strong, nonatomic) NSString *latitude;
-@property (strong, nonatomic) NSString *longitude;
+@property (nonatomic) double latitude;
+@property (nonatomic) double longitude;
 @property (strong, nonatomic) NSNumber *maxRegistrations;
 @property (strong, nonatomic) NSNumber *price;
 @property (strong, nonatomic) NSString *imageURL;
