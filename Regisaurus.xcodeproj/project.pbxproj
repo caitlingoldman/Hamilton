@@ -55,7 +55,7 @@
 
 /* Begin PBXFileReference section */
 		1284DE3588EF4182B1BE0706 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		40AA15DF182A0DB500C70819 /* Hamilton-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hamilton-Prefix.pch"; sourceTree = "<group>"; };
+		40AA15DF182A0DB500C70819 /* Regisaurus-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Regisaurus-Prefix.pch"; sourceTree = "<group>"; };
 		40BF281A182A0FFF00A1BD71 /* TicketDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TicketDetailsViewController.h; sourceTree = "<group>"; };
 		40BF281B182A0FFF00A1BD71 /* TicketDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TicketDetailsViewController.m; sourceTree = "<group>"; };
 		40BF281E182A184000A1BD71 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -65,20 +65,20 @@
 		40C060F0182CB0310096A1C0 /* EventDetailsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventDetailsView.h; sourceTree = "<group>"; };
 		40C060F1182CB0310096A1C0 /* EventDetailsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventDetailsView.m; sourceTree = "<group>"; };
 		40EA28BE18297095007A5D0F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		8B034CA1182422250050CBAB /* Hamilton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hamilton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B034CA1182422250050CBAB /* Regisaurus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Regisaurus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B034CA4182422250050CBAB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8B034CA6182422250050CBAB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		8B034CA8182422250050CBAB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		8B034CAC182422250050CBAB /* Hamilton-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Hamilton-Info.plist"; sourceTree = "<group>"; };
+		8B034CAC182422250050CBAB /* Regisaurus-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Regisaurus-Info.plist"; sourceTree = "<group>"; };
 		8B034CAE182422250050CBAB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8B034CB0182422250050CBAB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8B034CB3182422250050CBAB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8B034CB4182422250050CBAB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8B034CB7182422250050CBAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8B034CBF182422250050CBAB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		8B034CC5182422250050CBAB /* HamiltonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HamiltonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B034CC5182422250050CBAB /* RegisaurusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RegisaurusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B034CC6182422250050CBAB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		8B034CCE182422250050CBAB /* HamiltonTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HamiltonTests-Info.plist"; sourceTree = "<group>"; };
+		8B034CCE182422250050CBAB /* RegisaurusTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RegisaurusTests-Info.plist"; sourceTree = "<group>"; };
 		8B034CD0182422250050CBAB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8B034CD2182422250050CBAB /* HamiltonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HamiltonTests.m; sourceTree = "<group>"; };
 		8B034CEA182453710050CBAB /* EventDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventDetailsViewController.h; sourceTree = "<group>"; };
@@ -195,8 +195,8 @@
 		8B034CA2182422250050CBAB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8B034CA1182422250050CBAB /* Hamilton.app */,
-				8B034CC5182422250050CBAB /* HamiltonTests.xctest */,
+				8B034CA1182422250050CBAB /* Regisaurus.app */,
+				8B034CC5182422250050CBAB /* RegisaurusTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -233,8 +233,8 @@
 		8B034CAB182422250050CBAB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				40AA15DF182A0DB500C70819 /* Hamilton-Prefix.pch */,
-				8B034CAC182422250050CBAB /* Hamilton-Info.plist */,
+				40AA15DF182A0DB500C70819 /* Regisaurus-Prefix.pch */,
+				8B034CAC182422250050CBAB /* Regisaurus-Info.plist */,
 				8B034CAD182422250050CBAB /* InfoPlist.strings */,
 				8B034CB0182422250050CBAB /* main.m */,
 			);
@@ -254,7 +254,7 @@
 		8B034CCD182422250050CBAB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8B034CCE182422250050CBAB /* HamiltonTests-Info.plist */,
+				8B034CCE182422250050CBAB /* RegisaurusTests-Info.plist */,
 				8B034CCF182422250050CBAB /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -289,9 +289,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8B034CA0182422250050CBAB /* Hamilton */ = {
+		8B034CA0182422250050CBAB /* Regisaurus */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8B034CD6182422250050CBAB /* Build configuration list for PBXNativeTarget "Hamilton" */;
+			buildConfigurationList = 8B034CD6182422250050CBAB /* Build configuration list for PBXNativeTarget "Regisaurus" */;
 			buildPhases = (
 				B108E981E955494CBD86830D /* Check Pods Manifest.lock */,
 				8B034C9D182422250050CBAB /* Sources */,
@@ -303,14 +303,14 @@
 			);
 			dependencies = (
 			);
-			name = Hamilton;
+			name = Regisaurus;
 			productName = Hamilton;
-			productReference = 8B034CA1182422250050CBAB /* Hamilton.app */;
+			productReference = 8B034CA1182422250050CBAB /* Regisaurus.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8B034CC4182422250050CBAB /* HamiltonTests */ = {
+		8B034CC4182422250050CBAB /* RegisaurusTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8B034CD9182422250050CBAB /* Build configuration list for PBXNativeTarget "HamiltonTests" */;
+			buildConfigurationList = 8B034CD9182422250050CBAB /* Build configuration list for PBXNativeTarget "RegisaurusTests" */;
 			buildPhases = (
 				8B034CC1182422250050CBAB /* Sources */,
 				8B034CC2182422250050CBAB /* Frameworks */,
@@ -321,9 +321,9 @@
 			dependencies = (
 				8B034CCB182422250050CBAB /* PBXTargetDependency */,
 			);
-			name = HamiltonTests;
+			name = RegisaurusTests;
 			productName = HamiltonTests;
-			productReference = 8B034CC5182422250050CBAB /* HamiltonTests.xctest */;
+			productReference = 8B034CC5182422250050CBAB /* RegisaurusTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -343,7 +343,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8B034C9C182422250050CBAB /* Build configuration list for PBXProject "Hamilton" */;
+			buildConfigurationList = 8B034C9C182422250050CBAB /* Build configuration list for PBXProject "Regisaurus" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -356,8 +356,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8B034CA0182422250050CBAB /* Hamilton */,
-				8B034CC4182422250050CBAB /* HamiltonTests */,
+				8B034CA0182422250050CBAB /* Regisaurus */,
+				8B034CC4182422250050CBAB /* RegisaurusTests */,
 			);
 		};
 /* End PBXProject section */
@@ -457,7 +457,7 @@
 /* Begin PBXTargetDependency section */
 		8B034CCB182422250050CBAB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8B034CA0182422250050CBAB /* Hamilton */;
+			target = 8B034CA0182422250050CBAB /* Regisaurus */;
 			targetProxy = 8B034CCA182422250050CBAB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -571,9 +571,9 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Hamilton/Hamilton-Prefix.pch";
-				INFOPLIST_FILE = "Hamilton/Hamilton-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Hamilton/Regisaurus-Prefix.pch";
+				INFOPLIST_FILE = "Hamilton/Regisaurus-Info.plist";
+				PRODUCT_NAME = Regisaurus;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -589,9 +589,9 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Hamilton/Hamilton-Prefix.pch";
-				INFOPLIST_FILE = "Hamilton/Hamilton-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Hamilton/Regisaurus-Prefix.pch";
+				INFOPLIST_FILE = "Hamilton/Regisaurus-Info.plist";
+				PRODUCT_NAME = Regisaurus;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -614,8 +614,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "HamiltonTests/HamiltonTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "HamiltonTests/RegisaurusTests-Info.plist";
+				PRODUCT_NAME = RegisaurusTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -633,8 +633,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Hamilton/Hamilton-Prefix.pch";
-				INFOPLIST_FILE = "HamiltonTests/HamiltonTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "HamiltonTests/RegisaurusTests-Info.plist";
+				PRODUCT_NAME = RegisaurusTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -643,7 +643,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8B034C9C182422250050CBAB /* Build configuration list for PBXProject "Hamilton" */ = {
+		8B034C9C182422250050CBAB /* Build configuration list for PBXProject "Regisaurus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8B034CD4182422250050CBAB /* Debug */,
@@ -652,7 +652,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8B034CD6182422250050CBAB /* Build configuration list for PBXNativeTarget "Hamilton" */ = {
+		8B034CD6182422250050CBAB /* Build configuration list for PBXNativeTarget "Regisaurus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8B034CD7182422250050CBAB /* Debug */,
@@ -661,7 +661,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8B034CD9182422250050CBAB /* Build configuration list for PBXNativeTarget "HamiltonTests" */ = {
+		8B034CD9182422250050CBAB /* Build configuration list for PBXNativeTarget "RegisaurusTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8B034CDA182422250050CBAB /* Debug */,
